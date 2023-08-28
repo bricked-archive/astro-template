@@ -1,17 +1,17 @@
 {
-  "name": "@bricked/ts-template",
+  "name": "@bricked/astro-template",
   "private": false,
-  "description": "A template for TypeScript projects.",
+  "description": "A template for Astro projects.",
   "keywords": [
-    "ts-template"
+    "astro-template"
   ],
-  "homepage": "https://github.com/brycked/ts-template#readme",
+  "homepage": "https://github.com/brckd/astro-template#readme",
   "bugs": {
-    "url": "https://github.com/brycked/ts-template/issues"
+    "url": "https://github.com/brckd/astro-template/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brycked/ts-template.git"
+    "url": "git+https://github.com/brckd/astro-template.git"
   },
   "license": "MIT",
   "author": "Bricked",
@@ -41,7 +41,6 @@
     "extends": "@bricked"
   },
   "release": {
-    "dryRun": true,
     "extends": "@bricked/semantic-release-config"
   },
   "devDependencies": {
