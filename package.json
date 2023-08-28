@@ -48,7 +48,8 @@
     "extends": "@bricked/semantic-release-config"
   },
   "dependencies": {
-    "astro": "^2.10.14"
+    "astro": "^2.10.14",
+    "dotenv": "^16.3.1"
   },
   "devDependencies": {
     "@bricked/eslint-config": "^1.0.0",
