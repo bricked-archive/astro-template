@@ -1,0 +1,39 @@
+name: deploy
+
+on:
+  push:
+    branch: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - id: fetch-url
+        run: |
+          URL=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.html_url')
+            | sed -i '19i\
+                <meta http-equiv="refresh" content="0;URL='"$url"manual/'">
+            ' _site/index.html
+          echo "URL={URL}" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - uses: withastro/action@v0
+        env:
+          URL: ${{ steps.fetch-url.outputs.URL }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v1
