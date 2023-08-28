@@ -15,12 +15,16 @@
   },
   "license": "MIT",
   "author": "Bricked",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx tsup",
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
     "format": "npx sort-package-json && npx prettier --write . && npx eslint --fix --no-error-on-unmatched-pattern .",
     "prepare": "npx husky install",
-    "watch": "npx tsup --watch"
+    "preview": "astro preview",
+    "start": "astro dev"
   },
   "commitlint": {
     "extends": "@commitlint/config-conventional"
@@ -43,12 +47,14 @@
   "release": {
     "extends": "@bricked/semantic-release-config"
   },
+  "dependencies": {
+    "astro": "^2.10.14"
+  },
   "devDependencies": {
     "@bricked/eslint-config": "^1.0.0",
     "@bricked/prettier-config": "^1.0.0",
     "@bricked/semantic-release-config": "^1.1.0",
     "@bricked/ts-config": "^1.2.3",
-    "@bricked/tsup-config": "^1.0.0",
     "@commitlint/config-conventional": "^17.6.5",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "commitlint": "^17.6.6",
@@ -61,7 +67,6 @@
     "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "sort-package-json": "^2.4.1",
-    "tsup": "^7.2.0",
     "typescript": "^5.2.2"
   },
   "publishConfig": {
