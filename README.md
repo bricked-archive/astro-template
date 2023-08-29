@@ -27,7 +27,7 @@ npm install # install dependencies
 npm run dev # start dev server
 ```
 
-## Deploy locally
+### Deploy locally
 
 ```sh
 npm install # install dependencies
@@ -40,5 +40,5 @@ npm run build # build site to ./dist/
 
 ### Deploy to GitHub pages
 
-Enable pages in the [pages settings](https://github.com/brckd/astro-template/settings/pages).
-The static site will be built by the [`deploy.yml`](./.github/workflows/deploy.yml) workflow.
+1. Enable pages in the [pages settings](https://github.com/brckd/astro-template/settings/pages).
+2. Uncomment the push event in the [`deploy.yml`](./.github/workflows/deploy.yml) workflow to enable it.
