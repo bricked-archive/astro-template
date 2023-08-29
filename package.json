@@ -45,6 +45,7 @@
     "extends": "@bricked"
   },
   "release": {
+    "dryRun": true,
     "extends": "@bricked/semantic-release-config"
   },
   "dependencies": {
