@@ -18,12 +18,27 @@ A template for Astro projects.
 
 `astro-template` can be used as A template for Astro projects.
 
-## Building Locally
+## Deploy
 
-The package can also be built locally using the `build` script.
+### Develop locally
 
 ```sh
-npm run build
-yarn run build
-pnpm run build
+npm install # install dependencies
+npm run dev # start dev server
 ```
+
+## Deploy locally
+
+```sh
+npm install # install dependencies
+npm run build # build site to ./dist/
+```
+
+### Deploy to Vercel
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/brckd/astro-template)
+
+### Deploy to GitHub pages
+
+Enable pages in the [pages settings](https://github.com/brckd/astro-template/settings/pages).
+The static site will be built by the [`deploy.yml`](./.github/workflows/deploy.yml) workflow.
