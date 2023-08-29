@@ -11,41 +11,14 @@ A template for Astro projects.
 - [ ] [Create](https://github.com/brckd/astro-template/generate) a new repository from this template
 - [ ] Find & replace `astro-template` with the name of the new repository
 - [ ] Find & replace the description with a proper one
-- [ ] Optionally make the [installation guide](#installation) install as `devDependency`
-
-```sh
-npm install --save-dev @bricked/astro-template
-yarn add --dev @bricked/astro-template
-pnpm add --dev @bricked/astro-template
-```
-
-- [ ] Add `NPM_TOKEN` as a [new repository secret](https://github.com/brckd/astro-template/settings/secrets/actions/new)
 - [ ] Remove `"dryRun": true` from the [`package.json`](./package.json)
 - [ ] Remove this section
-
-## Installation
-
-[Node.js](https://nodejs.org/) 16.14.0 or newer is required.
-
-```sh
-npm install @bricked/astro-template
-yarn add @bricked/astro-template
-pnpm add @bricked/astro-template
-```
 
 ## Usage
 
 `astro-template` can be used as A template for Astro projects.
 
-## Building
-
-### Building Publicly
-
-Pulls to the repository will automatically be built with [semantic-release](https://github.com/semantic-release/npm).
-The built package can be found on [npm](https://www.npmjs.com/package/@bricked/astro-template?activeTab=code) or in the
-[latest github release](https://github.com/brckd/astro-template/releases/latest).
-
-### Building Locally
+## Building Locally
 
 The package can also be built locally using the `build` script.
 

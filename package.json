@@ -1,6 +1,6 @@
 {
   "name": "@bricked/astro-template",
-  "private": false,
+  "private": true,
   "description": "A template for Astro projects.",
   "keywords": [
     "astro-template"
