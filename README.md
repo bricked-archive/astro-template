@@ -36,7 +36,13 @@ npm run build # build site to ./dist/
 
 ### Deploy to Vercel
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/brckd/astro-template)
+#### From upstream
+
+[![Deploy and clone to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/brckd/astro-template)
+
+#### From a fork
+
+[![Deploy existing fork to Vercel](https://vercel.com/button)](https://vercel.com/new/import?s=https://github.com/brckd/astro-template)
 
 ### Deploy to GitHub pages
 
