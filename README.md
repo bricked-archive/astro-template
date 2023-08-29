@@ -20,6 +20,8 @@ A template for Astro projects.
 
 ## Deploy
 
+Set the `SITE` environment variable to the url of the deployment.
+
 ### Develop locally
 
 ```sh
